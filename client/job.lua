@@ -20,7 +20,7 @@ Citizen.CreateThread(function()
         if isLoggedIn and QBCore ~= nil then
             local ped = PlayerPedId()
             local pos = GetEntityCoords(ped)
-            if PlayerJob.name =="ambulance" or PlayerJob.name == "ambulance" then
+            if PlayerJob.name =="ambulance" then
                 for k, v in pairs(Config.Locations["duty"]) do
                     local dist = #(pos - vector3(v.x, v.y, v.z))
                     if dist < 5 then
